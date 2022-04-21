@@ -1,9 +1,8 @@
 package uz.epam.arraytask;
 
-import uz.epam.arraytask.entity.CustomArray;
+import uz.epam.arraytask.service.CustomArrayCreator;
 import uz.epam.arraytask.util.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {

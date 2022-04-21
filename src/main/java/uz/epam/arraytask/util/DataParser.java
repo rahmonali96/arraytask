@@ -1,9 +1,8 @@
 package uz.epam.arraytask.util;
 
-import java.util.ArrayList;
+import uz.epam.arraytask.validator.NumberValidator;
+
 import java.util.List;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class DataParser {

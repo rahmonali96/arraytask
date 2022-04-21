@@ -1,4 +1,4 @@
-package uz.epam.arraytask.util;
+package uz.epam.arraytask.service;
 
 import uz.epam.arraytask.entity.CustomArray;
 
