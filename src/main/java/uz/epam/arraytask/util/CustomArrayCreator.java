@@ -16,11 +16,15 @@ public class CustomArrayCreator {
     }
 
     public CustomArray createCustomArray(int size) {
-        Random random = new Random();
-        int[] ints = new int[size];
-        for (int i = 0; i < ints.length; i++) {
-            ints[i] = random.nextInt(10);
+        if (size < 0) {
+            throw new ArithmeticException("Size of array must be greater than zero");
+        }else{
+            Random random = new Random();
+            int[] ints = new int[size];
+            for (int i = 0; i < ints.length; i++) {
+                ints[i] = random.nextInt(10);
+            }
+            return new CustomArray(ints);
         }
-        return new CustomArray(ints);
     }
 }
