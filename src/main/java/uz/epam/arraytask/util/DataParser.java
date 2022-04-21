@@ -17,8 +17,13 @@ public class DataParser {
                 }
             }
             return hasNonNumber;
-        }).map(strings -> String.join("", strings))
-                .map(s -> s.chars().toArray())
-                .collect(Collectors.toList());
+        }).map(strings -> {
+            int length = strings.length;
+            int[] ints = new int[length];
+            for (int i = 0; i < length; i++) {
+                ints[i] =Integer.parseInt(strings[i]);
+            }
+            return ints;
+        }).collect(Collectors.toList());
     }
 }

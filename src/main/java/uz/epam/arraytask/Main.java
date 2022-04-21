@@ -1,11 +1,10 @@
 package uz.epam.arraytask;
 
 import uz.epam.arraytask.entity.CustomArray;
-import uz.epam.arraytask.util.ArraySearch;
-import uz.epam.arraytask.util.ArraySorter;
-import uz.epam.arraytask.util.DataReader;
+import uz.epam.arraytask.util.*;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,6 +17,10 @@ public class Main {
 //        ArraySearch search = new ArraySearch();
 //        System.out.println(search.findAllPrimeNumbers(customArray));
         DataReader dataReader = new DataReader();
-        dataReader.getDataFromFile("array.txt");
+        List<String> list =  dataReader.getDataFromFile("array.txt");
+        DataParser parser = new DataParser();
+        System.out.println(parser.parseList(list));
+        CustomArrayCreator customArrayCreator = new CustomArrayCreator();
+        System.out.println(customArrayCreator.customArrayList(parser.parseList(list)));
     }
 }
