@@ -1,8 +1,8 @@
-package uz.epam.arraytask.sorter;
+package uz.epam.arraytask.util;
 
 import uz.epam.arraytask.entity.CustomArray;
 
-public class CustomArraySorter {
+public class ArraySorter {
     public void bubbleSort(CustomArray customArray) {
         int[] ints = customArray.getInts();
         int length = ints.length;
